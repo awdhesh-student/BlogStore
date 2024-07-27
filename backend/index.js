@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(cors());
 
 /////////////////routes/////////////////////
-app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+app.use("/backend/uploads", express.static(path.join(__dirname, "uploads")));
 
 app.use("/api/user", require("./routes/userRoutes.js"));
 app.use("/api/admin", require("./routes/adminRoutes"));

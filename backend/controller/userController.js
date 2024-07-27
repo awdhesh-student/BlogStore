@@ -95,7 +95,7 @@ const postBlogController = async (req, res) => {
     if (req.file) {
       photo = {
         filename: req.file.filename,
-        path: `/uploads/${req.file.filename}`,
+        path: `/backend/uploads/${req.file.filename}`,
       };
     }
 
